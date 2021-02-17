@@ -8,8 +8,7 @@ part 'user_state.g.dart';
 
 @freezed
 abstract class UserState with _$UserState {
-  const factory UserState({@Default([]) List<UserInfo> users}) =
-      _UserState;
+  const factory UserState({@Default([]) List<UserInfo> users}) = _UserState;
 
   factory UserState.fromJson(Map<String, dynamic> json) =>
       _$UserStateFromJson(json);
