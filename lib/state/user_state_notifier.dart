@@ -11,7 +11,7 @@ class UserStateNotifier extends StateNotifier<UserState> {
   final UserRepository repository;
 
   Future<void> _getFlutterUsers() async {
-    var flutterUsers = await repository.getFlutterUsers();
+    var flutterUsers = await repository.getUsers();
     print(flutterUsers);
     state = state.copyWith(
       users: flutterUsers,

@@ -5,7 +5,7 @@ import 'package:retrofit/retrofit.dart';
 
 part 'user_api_client.g.dart';
 
-@RestApi(baseUrl: "https://jsonplaceholder.typicode.com/")
+@RestApi(baseUrl: "https://jsonplaceholder.typicode.com")
 abstract class UserApiClient {
   factory UserApiClient(Dio dio, {String baseUrl}) = _UserApiClient;
 
@@ -16,5 +16,5 @@ abstract class UserApiClient {
   }
 
   @GET("/posts")
-  Future<List<UserInfo>> getFlutterUsers();
+  Future<List<UserInfo>> getUsers();
 }

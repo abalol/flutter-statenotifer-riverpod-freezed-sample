@@ -17,7 +17,7 @@ class _UserApiClient implements UserApiClient {
   String baseUrl;
 
   @override
-  Future<List<UserInfo>> getFlutterUsers() async {
+  Future<List<UserInfo>> getUsers() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _data = <String, dynamic>{};

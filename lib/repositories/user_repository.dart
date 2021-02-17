@@ -5,7 +5,7 @@ import 'api/user_api_client.dart';
 class UserRepository {
   final _api = UserApiClient.create();
 
-  Future<List<UserInfo>> getFlutterUsers() async {
-    return await _api.getFlutterUsers();
+  Future<List<UserInfo>> getUsers() async {
+    return await _api.getUsers();
   }
 }
